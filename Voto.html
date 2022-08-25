@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="smolsuiface2.png">
+    <title>Conteo de votos</title>
+    <link href="Voto.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="contenedor">
+        <h1 id="titulo">Conteo de Votos</h1>
+    </div>
+    <aside>
+        <h2> Agregar voto </h2>
+        <button id="boton" class="btn bnt-info" onclick="gbtn()"> Apruebo</button>
+        <button id="boton2" class="btn bnt-info" onclick="gbtn2()"> Rechazo</button>
+        <button id="boton3" class="btn bnt-info" onclick="gbtn3()"> Nulo </button>
+    </aside>
+    <aside>
+        <h2> Quitar voto </h2>
+        <button id="botonr1" class="btn bnt-info" onclick="gbtnr()"> Apruebo</button>
+        <button id="botonr2" class="btn bnt-info" onclick="gbtnr2()"> Rechazo</button>
+        <button id="botonr3" class="btn bnt-info" onclick="gbtnr3()"> Nulo </button>
+    </aside>
+    <div class="container py-2">
+        <p id="user" class="lead"> Resultados votación</p>
+
+    </div>
+    <table id="tabla">
+        <tr>
+            <td id="Apruebo">Apruebo: 0</td>
+            <td id="Rechazo">Rechazo: 0</td>
+            <td id="Nulo">Nulo: 0</td>
+            <td id="Total">Total: 0</td>
+
+        </tr>
+    </table>
+
+    <script src="Voto.js"></script>
+
+</body>
+</html>
